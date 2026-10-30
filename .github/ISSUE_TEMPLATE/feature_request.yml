@@ -1,0 +1,33 @@
+name: "Идея для NEXEL"
+description: "Предложи изменение, которое поможет в реальном игровом сценарии."
+title: "[Идея]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Опиши задачу и желаемый результат. Перед отправкой посмотри docs/ROADMAP.md и существующие Issues.
+        Предложение не означает обещание сроков реализации.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую задачу нужно решить?
+      description: "Что сейчас неудобно и в какой ситуации это происходит?"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Желаемый результат
+      description: "Как должно работать улучшение с точки зрения игрока?"
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Другие варианты
+      description: "Есть ли обходное решение или другой способ решить задачу?"
+  - type: textarea
+    id: examples
+    attributes:
+      label: Примеры
+      description: "Сценарий, скриншот или набросок, если они помогают понять идею. Не добавляй личные данные."

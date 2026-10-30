@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Вопросы и обсуждения"
+    url: https://github.com/Dooopee/NEXEL/discussions
+    about: "Вопросы об использовании NEXEL и обсуждение проекта."
+  - name: "Скачать или обновить NEXEL"
+    url: https://github.com/Dooopee/NEXEL/releases/latest
+    about: "Последняя версия, установщик и примечания к выпуску."
+  - name: "Частые вопросы"
+    url: https://github.com/Dooopee/NEXEL/blob/main/docs/FAQ.md
+    about: "Установка, сборки, аккаунты, скины и обновления."

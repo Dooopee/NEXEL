@@ -1,0 +1,65 @@
+name: "Ошибка в NEXEL"
+description: "Помоги воспроизвести проблему с установкой, запуском или работой лаунчера."
+title: "[Ошибка]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за отчёт. Сначала посмотри существующие Issues и FAQ.
+        Все ответы публичны: не добавляй пароли, токены, коды входа, базы аккаунтов или личные миры.
+  - type: input
+    id: nexel_version
+    attributes:
+      label: Версия NEXEL
+      placeholder: "Например: 0.4.2"
+    validations:
+      required: true
+  - type: input
+    id: windows_version
+    attributes:
+      label: Версия Windows
+      placeholder: "Например: Windows 11 x64"
+    validations:
+      required: true
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: Minecraft, загрузчик и модпак
+      description: "Заполни, если проблема относится к игре или сборке."
+      placeholder: "Версия Minecraft, Fabric / Forge / NeoForge / Vanilla, название модпака"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как воспроизвести
+      description: "Перечисли действия по порядку, начиная с открытия NEXEL."
+      placeholder: "1. Открыть…\n2. Нажать…\n3. Получить ошибку…"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+      placeholder: "Что должно было произойти?"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Что произошло
+      description: "Приведи точный текст ошибки, если он есть."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Логи и скриншоты
+      description: "Только относящийся к проблеме фрагмент. Перед публикацией удали персональные данные и секреты."
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Перед публикацией
+      options:
+        - label: "Я проверил существующие Issues и не нашёл отчёт об этой проблеме."
+          required: true
+        - label: "Я проверил текст и вложения: паролей, токенов и кодов входа в них нет."
+          required: true
